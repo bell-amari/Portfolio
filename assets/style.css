@@ -1,24 +1,26 @@
 :root{
-    /* --color-primary: rgb(0, 0, 255);
-    --color-secondary: rgb(255, 217, 0); */
-    --color-tertiary: #f2f2f2;
-    --color-quaternary: #52ab98;
+    --color-light: #ffffff;
     --color-dark: #000000;
+    --color-accent: #635351;
 }
 * {
     margin: 0;
 }
+.vertical_line{
+    border-left: 2px solid var(--color-accent);
+    height: inherit;
+}
 header{
     display: flex;
     padding: 7px 0 5px 0;
-    border-bottom: black 1px solid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 header h1{
     font-weight: bold;
-    color: var(--color-secondary);
-    margin: 0 ;
-    background-color: var(--color-primary);
-    border-radius: 0px 10px 10px 0;
+    margin: 0;
     margin: 7px 0;
     padding: 7px;
     
@@ -33,7 +35,7 @@ header nav ul{
     
 }
 header nav ul li{
-    margin: 0 7px;
+    margin: 0 10px;
     font-size: 18px;
     background-color: var(--color-primary);
     padding: 7px;
@@ -41,21 +43,78 @@ header nav ul li{
 }
 header a:link{
     text-decoration: none;
-    color: var(--color-secondary);
+    color: var(--color-dark);
 }
 header a:visited{
     text-decoration: none;
-    color: var(--color-secondary);
+    color: var(--color-dark);
 }
 header a:hover{
     text-decoration: none;
-    color: var(--color-secondary);
-    background-color: var(--color-quaternary);
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    padding: 7px;
+    border-radius: 7px;
 }
 header a:active{
     text-decoration: none;
-    color: var(--color-tertiary);
+    color: var(--color-dark);
 }
 body{
     background-color: var(--color-secondary);
+}
+#header_backdrop img{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 77px;
+}
+#portriat{
+    flex-wrap: wrap;
+    width: 20%;
+    height: 300px;
+    margin: 0 2.5%;
+}
+
+#about_me_section{
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 var(--color-accent), 0 6px 20px 0 var(--color-accent);
+    padding: 10px;
+    margin: 10px;
+}
+#portriat img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+#about_me_section_content{
+    width: 70%;
+    margin: 0 2.5%;
+}
+#work_section{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 var(--color-accent), 0 6px 20px 0 var(--color-accent);
+    padding: 10px;
+    margin: 10px;
+}
+.work_sub_section_half{
+    
+}
+.work_sub_section_whole{
+
+}
+#contact_me_section{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 var(--color-accent), 0 6px 20px 0 var(--color-accent);
+    padding: 10px;
+    margin: 10px;
 }
