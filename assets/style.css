@@ -101,7 +101,7 @@ body{
 }
 #about_me_section p{
     margin: 20px 10px;
-    width: 1000px;
+    max-width: 1000px;
     height: 300px;
     font-size: 30px;
 }
@@ -188,4 +188,31 @@ body{
 .work_sub_sections_whole, .work_sub_sections_half a:active{
     text-decoration: none;
     filter: none;
+}
+
+@media only screen and (max-width:600px) {
+    header{ 
+        display: block;
+        position: static;
+    }
+    header h1{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul{
+        width: 100%;
+        text-align: center;
+        display:block;
+    }
+    #image_text{
+        position: absolute;
+        width: auto;
+        top: 50%;
+        left: 50%;
+        font-size: 20px;
+    }
+    #about_me_section p{
+        font-size: 25px;
+    }
 }
