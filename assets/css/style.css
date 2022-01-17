@@ -1,0 +1,33 @@
+:root{
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --color-accent: #635351;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#about-me-section{
+    width: 90%;
+    margin-top: 20px;
+}
+#work-section{
+    width: 90%;
+    margin-top: 20px;
+}
+#contact-me-section{
+    width: 90%;
+    margin-top: 20px;
+}
+#portriat-image{
+    max-width: 20%;
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width:600px) {
+    
+}
